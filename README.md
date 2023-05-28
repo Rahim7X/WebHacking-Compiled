@@ -10,3 +10,8 @@ Methodology , Tips , And Resources
 - [Initial Recon](https://github.com/zenithx01/BugBible/blob/master/Methodology/Initial-Recon.md)
 - [Test ATO](https://github.com/zenithx01/BugBible/blob/master/Methodology/Test-ATO.md)
 - [Test Login & Register](https://github.com/zenithx01/BugBible/blob/master/Methodology/Test-Account-Settings.md)
+
+
+## Attacks 
+
+- [SQL Injection](https://github.com/zenithx01/BugBible/blob/master/SQL-Injection/SQL-Injection-Manual.md)
