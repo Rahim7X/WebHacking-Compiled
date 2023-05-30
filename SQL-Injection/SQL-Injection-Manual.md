@@ -46,7 +46,6 @@ Delete (DELETE):
 ## SQL Injection Detection and confirmation
 
 
-In Create Operation
 
 ```SQL
   # Error Based PAYLOADS [;,--,',",#]
