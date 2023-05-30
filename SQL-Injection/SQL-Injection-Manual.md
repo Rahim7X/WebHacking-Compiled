@@ -76,8 +76,9 @@ Delete (DELETE):
 # Union is used to concatinate two queries into 1 result and show it to user
 Select Column1 , Column2 from table1 Union select column3 and column4 from table2
 # This Will Concatinate Column1,Column2,Column3,Column4 at One result
-# Rule to make union work (i) Number of columns should be same in two tables
-													(ii) Datatypes must be same
+# Rule to make union work 
+(i) Number of columns should be same in two tables
+(ii) Datatypes must be same
 
 # So to determine number of columns called in f
 irst query we will use
