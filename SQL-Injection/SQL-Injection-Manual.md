@@ -68,3 +68,21 @@ Delete (DELETE):
   
 ```
 
+## Exploitation
+
+### How Union Works
+
+```sql
+# Union is used to concatinate two queries into 1 result and show it to user
+Select Column1 , Column2 from table1 Union select column3 and column4 from table2
+# This Will Concatinate Column1,Column2,Column3,Column4 at One result
+# Rule to make union work (i) Number of columns should be same in two tables
+													(ii) Datatypes must be same
+
+# So to determine number of columns called in f
+irst query we will use
+select ?(don't know) from table1 UNION select NULL
+# if the number of column mismatch we will get an error and we have to try again
+select ?(don't know) from table1 UNION select NULL,NULL'NULL
+# Until we get to know how many columns are called
+```
