@@ -15,3 +15,4 @@ Methodology , Tips , And Resources
 ## Attacks 
 
 - [SQL Injection](https://github.com/zenithx01/BugBible/blob/master/SQL-Injection/SQL-Injection-Manual.md)
+- [JWT Attacks](https://github.com/zenithx01/BugBible/blob/master/JWT-Attacks/JWT-Testing-Manual.md)
