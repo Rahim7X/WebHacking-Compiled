@@ -32,25 +32,29 @@ Encoded in base 64 Separated by .
 Ex : 
 
 Header : 
+```python
 base64enc[{
 "algo":"HS256",
 "typ":"JWT"
 }]
-
+```
 - alg - which algorithm is used to create the signature Ex : HS256,RS256,PS256
 
 Payload :
+```python
 base64enc[{
 "firstname:"sss",
 "lastname":"tmss",
 "userid":"234"
 }] 
+```
 
 Signature : 
+```python
 HMACSHA256{
 base64enc(header).base64enc(payload).secret(key)
 }
-
+```
 
 ### Seccurity Conserns In JWT
 
