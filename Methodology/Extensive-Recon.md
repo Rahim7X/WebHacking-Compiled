@@ -125,6 +125,7 @@ sudo masscan -p<port num> <CIDR Range here> --exclude <Exclude IP> --banners -oX
 - whatweb
 
 #### Firewall Fingerprinting and Bypassing  
+- Use [HackOriginFinder](https://github.com/hakluke/hakoriginfinder) to find real ip of host
 # WAF (Real pain)
 Most amateur bug hunters will throw <img src=x onerror=alert(1)> into an a reflected input field, look at the dreaded &lt; and &gt; in the source code, noticing it has been filtered, and then give up. But you can go further.
 WAFs (firewalls) will block many payloads, but not all…
