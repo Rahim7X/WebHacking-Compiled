@@ -29,3 +29,8 @@
 - Now Document If You Sense Juicy Request From Burp History For Latter Test
 - Check Those On Surface Level
 - Move To Procedural Testing As Per Methodolohy
+
+## How to find GOOD Program
+1 : Look for sucessfull bounty hunters public profile
+2 : Scroll Down to their most awarded partcipated in
+3 : Hack Those They are vulnerable
