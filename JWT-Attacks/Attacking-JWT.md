@@ -121,3 +121,18 @@ then click OK.
 DONE!!
 
 ```
+
+
+### JWT authentication bypass via kid header path traversal
+ the server uses the kid parameter in JWT header to fetch the relevant key from its filesystem
+```bash
+Go to the JWT Editor Keys tab in Burp's main tab bar. Click New Symmetric Key. click Generate
+Replace the generated value for the k property with a Base64-encoded null byte (AA==). 
+Click OK to save the key. 
+change the value of the kid parameter to a path traversal sequence pointing to the /dev/null file:
+../../../../../../../dev/null 
+ change the value of the sub claim to administrator
+ click Sign, Clck ok
+ DONE !!
+
+```
