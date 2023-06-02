@@ -13,6 +13,7 @@ Methodology , Tips , And Resources
 - [Test Login & Register / Session](https://github.com/zenithx01/BugBible/blob/master/Methodology/Test-Account-Settings.md)
 - [Javascript Enumration](https://github.com/zenithx01/BugBible/blob/master/Methodology/JS-Enumration.md)
 - [Test For Information Disclosure](https://github.com/zenithx01/BugBible/blob/master/Methodology/Information-Disclosure.md)
+- [Testing Cache](https://github.com/zenithx01/BugBible/blob/master/Methodology/Testing-Cache.md)
 
 
 
