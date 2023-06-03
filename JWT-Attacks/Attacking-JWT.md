@@ -136,3 +136,16 @@ change the value of the kid parameter to a path traversal sequence pointing to t
  DONE !!
 
 ```
+
+### JWT authentication bypass via algorithm confusion
+- found jwks.json leaking RSA public key in /jwks.json
+```bash
+Copy JWK object from inside of key array
+go to jwt key editor tab
+Say New RSA Key
+Paste JWK Object
+ANd click ok
+righclick And copy as public pem
+run python script for algo confusion
+DONE!!!
+```
