@@ -42,3 +42,35 @@ Meta Data Of Downloaded Image
 - API ABuse
 IDOR , SQLi
 
+
+### LAB
+#### Information disclosure in error messages
+```bash
+To solve the lab, obtain and submit the version number of this framework. 
+Just added ' in end of url
+https://0ad000fa0353934f80c64ac500750045.web-security-academy.net/product?productId=13'
+```
+
+#### Information disclosure on debug page
+```bash
+Found a comment in souce code
+<!-- <a href=/cgi-bin/phpinfo.php>Debug</a> -->
+```
+
+#### Source code disclosure via backup files
+```bash
+/robots.txt leaked backup endpoint which disclosed source code
+```
+
+#### Authentication bypass via information disclosure
+```bash
+# Admin Interface Is Only Available To Local Users
+Intercept Request Then Add
+X-Custom-Ip-Authorization: 127.0.0.1
+```
+
+####  Information disclosure in version control history
+```bash
+.git exposed
+
+```
