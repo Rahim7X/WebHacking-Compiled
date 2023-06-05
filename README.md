@@ -22,3 +22,6 @@ Methodology , Tips , And Resources
 
 - [SQL Injection](https://github.com/zenithx01/BugBible/blob/master/SQL-Injection/SQL-Injection-Manual.md)
 - [JWT Attacks](https://github.com/zenithx01/BugBible/blob/master/JWT-Attacks/JWT-Testing-Manual.md)
+- [NoSQL Injection](https://github.com/zenithx01/BugBible/blob/master/NoSQLi/NoSQLi-Manual.md)
+- [O Auth 2.0 Attacks](https://github.com/zenithx01/BugBible/blob/master/O-Auth/O-Auth-Manual.md)
+- [Web Cache Attacks](https://github.com/zenithx01/BugBible/blob/master/Web-Cache/Web-Cache-Attacks.md)
