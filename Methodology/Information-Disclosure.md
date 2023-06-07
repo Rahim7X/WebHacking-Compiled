@@ -42,7 +42,35 @@ Meta Data Of Downloaded Image
 - API ABuse
 IDOR , SQLi
 
-
+###Perils of Spring Boot Actuators Misconfiguration
+- Endpoints
+```bash
+/heapdump
+/threadump 
+/trace 
+/logfile
+/shutdown
+/mappings
+/env
+/restart
+/health
+/prometheus
+/auditevents
+/beans
+/caches
+/conditions
+/configprops
+/flyway
+/httpexchanges
+/integrationgraph
+/liquibase
+/scheduledtasks
+/threaddump
+/sessions
+/quartz
+/mappings
+/metrics
+```
 ### LAB
 #### Information disclosure in error messages
 ```bash
