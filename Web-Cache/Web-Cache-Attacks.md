@@ -52,4 +52,10 @@ if-not-match: payload —> This can overwrite the cache
 - Also X-Forwarded-Host: example.com
 
 #### Targeted web cache poisoning using an unknown header
-- 
+- Got hidden header x-host from paraminer
+- Vary: user-agent in response
+- so we need victim user agent to exploit
+- victim sees our comment everytime
+- Got victim user agent though xss to our server
+- and exploited
+
