@@ -59,3 +59,10 @@ if-not-match: payload —> This can overwrite the cache
 - Got victim user agent though xss to our server
 - and exploited
 
+#### Web cache poisoning via an unkeyed query string
+- Homepage dont expect query string as it is static 
+- but it is unkeyed and reflected in response
+- so i added 
+```bash
+example.com?s=1'/><img+src%3dx+onerror%3d"alert(1)"+/>
+```
