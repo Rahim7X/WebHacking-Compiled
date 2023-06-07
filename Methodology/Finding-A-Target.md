@@ -34,3 +34,16 @@
 1. Look for sucessfull bounty hunters public profile
 2. Scroll Down to their most awarded partcipated in
 3. Hack Those They are vulnerable
+
+## What to hunt as a starter
+### Indian Government sites: No crowd
+- Google dork: .gov.in
+- How to report
+VISIST : https://nciipc.gov.in/
+you will find a disclosure vulnerability form, fill that out and send mail to rvdp@nciipc.gov.in
+
+### VDP of E-Commerce
+- ALL Uk Based Ecommerce Site
+
+### Finally BugCrowd Or Hackerone
+- Try No Reward Based First
