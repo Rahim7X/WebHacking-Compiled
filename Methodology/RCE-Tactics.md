@@ -6,3 +6,8 @@
 ```bash
 It happends often. Check For Misconfigurations
 ```
+
+## In php Symfony-based websites
+```bash
+https://portswigger.net/daily-swig/symfony-based-websites-open-to-rce-attack-research-finds
+```
