@@ -113,6 +113,8 @@ links within the reset password page its leak password reset token in referer he
 ### Insecure Local Data Storage
 ```bash
 Righclick Inspect
-Click Storage 
+Click Storage / Or Application/Storage
 CHeck all values and data 
+
+
 ```
