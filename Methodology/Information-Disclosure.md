@@ -102,3 +102,9 @@ X-Custom-Ip-Authorization: 127.0.0.1
 .git exposed
 
 ```
+
+#### Password Reset Token Leakage In Referer Header
+```bash
+I have found that if user open the link of reset password and than click on any external
+links within the reset password page its leak password reset token in referer header.
+```
