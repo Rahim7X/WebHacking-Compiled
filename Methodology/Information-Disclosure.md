@@ -108,3 +108,11 @@ X-Custom-Ip-Authorization: 127.0.0.1
 I have found that if user open the link of reset password and than click on any external
 links within the reset password page its leak password reset token in referer header.
 ```
+
+
+### Insecure Local Data Storage
+```bash
+Righclick Inspect
+Click Storage 
+CHeck all values and data 
+```
