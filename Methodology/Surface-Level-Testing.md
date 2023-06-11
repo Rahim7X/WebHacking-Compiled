@@ -23,3 +23,19 @@ Now Send to intruder booom Flood
 ```
 ### Masss Commenting
 ### Mass File Uploading
+
+### Lack of Password Confirmation When Changing Email
+```bash
+Attack Scenerio : When some forget to logout from the account in a publc computer, anyone can change the email to its 
+own and verify it. And after that using the forget password feature, it can change the password too.
+```
+
+### Weak Password Policy
+```bash
+your website allowing users to set their password to simple, at this time, i can set my password to 123456 Determine the resistance of the application against brute force password guessing using available password dictionaries by evaluating the length, complexity, reuse and aging requirements of passwords.
+you should make password policy to protect your user, Uppercase, lowcase. as it makes it much more secure it will be acceptable
+
+REFERENCE : https://hackerone.com/reports/17160
+```
+
+
