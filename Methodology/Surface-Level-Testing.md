@@ -49,4 +49,12 @@ you should make password policy to protect your user, Uppercase, lowcase. as it 
 REFERENCE : https://hackerone.com/reports/17160
 ```
 
+### Payment Gateway Bypasses
+- Intercept Payment Request And Chnage to 0$ Check.
+- Intercept Payment Request Change 100$-100$
+- Change price to 0$ while adding to cart 
+- Changing Details On Buy Now
+- Check Strapi API Key Leaks
+- Read Payment Gateway documentation to understand the function
+
 
