@@ -51,7 +51,8 @@ http://facebook.com/dialogue/oauth?email=bla@mail.com&user_id=1234
 #### Use the same code twise to get access token
 
 #### Account Squatting
-- Same account with email and pass
-- same email and o auth signup 
-- if the account is same it's account squatting and takeover
+- Hacker signed up using victim email but don't have access to verification link
+- Victim Signed Up Using O-auth
+- Verification Bypassed
+- Now hacker can acessed victim account with uname and password
 
