@@ -33,7 +33,7 @@ Now Send to intruder booom Flood
 - Different Cookie Parameter
 - Hidden parameter
 - Drop Captcha GET Request / POST request
-[IP Block Bypass](https://infosecwriteups.com/bypass-rate-limit-request-fuzzing-etc-with-tor-3a285f3980d2)
+- [IP Block Bypass](https://infosecwriteups.com/bypass-rate-limit-request-fuzzing-etc-with-tor-3a285f3980d2)
 ### Lack of Password Confirmation When Changing Email
 ```bash
 Attack Scenerio : When some forget to logout from the account in a publc computer, anyone can change the email to its 
