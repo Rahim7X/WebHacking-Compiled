@@ -103,10 +103,3 @@ body * to `{"success":true}` or `{}`
 it works when json is being used to transfer and receive data.
 <br>&nbsp;
 
-## Credit
-Based on [0xMaruf](https://infosecwriteups.com/firing-8-account-takeover-methods-77e892099050)'s writeup.
-<br>&nbsp;
-
-## Support
-You can Follow [me](https://twitter.com/MeAsHacker_HNA) on twitter or
-<br><br><a href="https://www.buymeacoffee.com/NafisiAslH" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
