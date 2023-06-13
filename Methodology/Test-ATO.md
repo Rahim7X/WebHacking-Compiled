@@ -19,6 +19,8 @@
 - CHange Email Order
 - Provide list of email
 
+### JSon variable
+- ADD {“token”:null} etc
 ### Password Reset Poisioning
 - Change Host heafer to attacker's domain when requesting for password reset link. 
 - Usually It Uses host header to determine how to construct reset link
@@ -45,7 +47,7 @@
 - Enter 0’s in the code. For example, if it’s a 6 digit code use 000000 as 2FA.
 - Request Manipulation: Null JSON response, change the “OTP required” parameter from true to false, remove the 2fa code, remove both code and parameter, in JSON give email as an array. (More - information)
 - You may able to get the backup codes using the following request 
-
+- ADD json value as null 
 # Firing 8 Account Takeover Methods 🔥
 
 ### 1. Unicode Normalization Issue
