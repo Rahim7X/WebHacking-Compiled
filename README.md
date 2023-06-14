@@ -10,7 +10,7 @@ Methodology , Tips , And Resources
 - [Extensive Recon](https://github.com/zenithx01/BugBible/blob/master/Methodology/Extensive-Recon.md)
 - [Initial Recon / Quick](https://github.com/zenithx01/BugBible/blob/master/Methodology/Initial-Recon.md)
 - [Test ATO](https://github.com/Rahim7X/BugBible/blob/master/Methodology/Test-ATO.md)
-- [Test Login & Register / Session](https://github.com/zenithx01/BugBible/blob/master/Methodology/Test-Account-Settings.md)
+- [Test Login & Register / Session](https://github.com/Rahim7X/BugBible/blob/master/Methodology/Test-Register-Login.md)
 - [Javascript Enumration](https://github.com/zenithx01/BugBible/blob/master/Methodology/JS-Enumration.md)
 - [Test For Information Disclosure](https://github.com/zenithx01/BugBible/blob/master/Methodology/Information-Disclosure.md)
 - [Testing Cache](https://github.com/zenithx01/BugBible/blob/master/Methodology/Testing-Cache.md)
