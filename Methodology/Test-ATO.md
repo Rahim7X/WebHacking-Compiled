@@ -48,6 +48,19 @@
 - Request Manipulation: Null JSON response, change the “OTP required” parameter from true to false, remove the 2fa code, remove both code and parameter, in JSON give email as an array. (More - information)
 - You may able to get the backup codes using the following request 
 - ADD json value as null 
+
+## Underrated Methods
+```bash
+1 : ClickJacking To Account Takeover
+:: User Deleted The account at the same point you created an account with same username
+:: Now You Will Get Deleted Account Session
+3 : If two app works the same copy 1 app cokie and paste in another app check if action is sucessful
+eg : amzon india cookei on amzom.com
+4 : Braking Authentication Flow Using Response Manipulation
+5 : SSO Takeover & redirect_uri[0=attacker.com
+6 : changing Email on o-auth confirmation
+```
+
 # Firing 8 Account Takeover Methods 🔥
 
 ### 1. Unicode Normalization Issue
