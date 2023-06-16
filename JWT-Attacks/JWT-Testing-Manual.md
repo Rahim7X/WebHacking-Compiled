@@ -140,5 +140,8 @@ Or Leave it blank
 4 BruteForce HS256 
 [jwtbrute](https://github.com/jmaxxz/jwtbrute)
 
-
-
+## CVE-2023-30845
+```bash
+curl http:example.com/api -X POST -H 'X-HTTP-Method-Override: PUT' \ 
+-H 'Content-Type: application/json' --data '{"username":"xyz"}'
+```
