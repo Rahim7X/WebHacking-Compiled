@@ -14,7 +14,11 @@ https://hackerone.com/reports/540301
 https://hackerone.com/reports/384782
 
 # Not Securing wp-config.php WordPress Configuration File
-
+# Takeover Wordpress If Not Installed
+```bash
+https://example.com/wp-admin/install.php
+```
+- If you can install wordpress again RCE boom
 
 ## Findings
 - It Discloses Author And Admin Information
