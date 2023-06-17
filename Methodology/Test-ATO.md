@@ -10,6 +10,8 @@
 - Host: target.com to Host: evil.com
 - Check If Evil.com reflected in reset link
 
+### CSRF On 2Fa Disable Feature
+
 ### IDOR to ATO
 - Change Email To Anyone Else WHen Resetting The Password
 - Chnage UID to reset another user's passweord
