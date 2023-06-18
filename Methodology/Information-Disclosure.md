@@ -123,4 +123,5 @@ CHeck all values and data
 ```bash
 example.com/phpmyadmin/setup
 example.com/phpmyadmin/setup.php
+example.com/phpMyAdmin/setup/index.php
 ```
