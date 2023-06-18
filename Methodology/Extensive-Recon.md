@@ -199,3 +199,10 @@ cat allsubs.txt | gauplus -subs | qsreplace "burp.collan" | httpx
 cat allsub.txt | gauplus -subs | httpx -sc -nc | grep "403\|401" | anew unauthed.txt
 cat allsub.txt | gauplus -subs | httpx -title | grep -i "admin\|login\|dashboard" | anew loginpanel.txt
 ```
+
+### Downloading The Source Code Of Subdomains
+```bash
+$ cat subd.txt | aquatone
+$ cat subd.txt | fff -d 1 -S -o scode
+```
+
