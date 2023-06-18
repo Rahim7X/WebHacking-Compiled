@@ -118,3 +118,9 @@ CHeck all values and data
 
 
 ```
+
+### Try To Access
+```bash
+example.com/phpmyadmin/setup
+example.com/phpmyadmin/setup.php
+```
