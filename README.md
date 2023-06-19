@@ -35,16 +35,16 @@ Methodology , Tips , And Resources
 - [XSS Hunting](https://github.com/Rahim7X/BugBible/blob/master/XSS/XSS-manual.md)
 - [XXE](https://github.com/Rahim7X/BugBible/blob/master/XXE/XXE-manual.md)
 
-  ## Class X Issues
+## Class X Issues
 
-  - [Same Site Scripting]()
-  - [Origin IP](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Origin-Ip.md)
-  - [Mail Server Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/MailSevcer-Issue.md)
-  - [Integer Overflow](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Interger-Overflow.md)
-  - [Insecure Crossdomain](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Insecure-Crossdomain.md)
-  - [Exif Data Not Stripped](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Exif-Data-Issue.md)
-  - [.git Exposed](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/DOTgit-Attacks.md)
-  - [DOS Attack](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/DOS-Methods.md)
-  - [Exploiting Cookie](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Cookie-Issues.md)
-  - [Captacha Bypass](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/CAPTCHA-Bypass.md)
-  - [AEM Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/AEM-misconfiguration.md)
+- [Same Site Scripting]()
+- [Origin IP](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Origin-Ip.md)
+- [Mail Server Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/MailSevcer-Issue.md)
+- [Integer Overflow](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Interger-Overflow.md)
+- [Insecure Crossdomain](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Insecure-Crossdomain.md)
+- [Exif Data Not Stripped](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Exif-Data-Issue.md)
+- [.git Exposed](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/DOTgit-Attacks.md)
+- [DOS Attack](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/DOS-Methods.md)
+- [Exploiting Cookie](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Cookie-Issues.md)
+- [Captacha Bypass](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/CAPTCHA-Bypass.md)
+- [AEM Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/AEM-misconfiguration.md)
