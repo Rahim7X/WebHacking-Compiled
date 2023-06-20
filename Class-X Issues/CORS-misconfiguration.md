@@ -41,4 +41,4 @@ Access-Control-Allow-Credentials: True
 ### Resources
 - [Report 1](https://hackerone.com/reports/426165)
 - [Report 2](https://hackerone.com/reports/470298)
--[Writeup](http://blog.portswigger.net/2016/10/exploiting-cors-misconfigurations-for.html)
+- [Writeup](http://blog.portswigger.net/2016/10/exploiting-cors-misconfigurations-for.html)
