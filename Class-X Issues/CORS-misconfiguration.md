@@ -37,3 +37,8 @@ Access-Control-Allow-Credentials: True
 - add origin as null
 - use suffix or prifix of allowd domain to check
 - try other ways to bypass regex
+
+### Resources
+[Report 1](https://hackerone.com/reports/426165)
+[Report 2](https://hackerone.com/reports/470298)
+[Writeup](http://blog.portswigger.net/2016/10/exploiting-cors-misconfigurations-for.html)
