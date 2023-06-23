@@ -48,3 +48,4 @@ Methodology , Tips , And Resources
 - [Exploiting Cookie](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Cookie-Issues.md)
 - [Captacha Bypass](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/CAPTCHA-Bypass.md)
 - [AEM Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/AEM-misconfiguration.md)
+- [Hunting S3 Buckets](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/S3-Buckeet-Hunt.md)
