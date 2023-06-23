@@ -200,6 +200,10 @@ cat allsub.txt | gauplus -subs | httpx -sc -nc | grep "403\|401" | anew unauthed
 cat allsub.txt | gauplus -subs | httpx -title | grep -i "admin\|login\|dashboard" | anew loginpanel.txt
 ```
 
+### Take ScreenShots
+```bash
+httpx -l liveDomains.txt -srd subsScreens -ss
+```
 ### Downloading The Source Code Of Subdomains
 ```bash
 $ cat subd.txt | aquatone
