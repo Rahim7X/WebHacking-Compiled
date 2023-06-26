@@ -145,7 +145,7 @@ Or Leave it blank
 curl http:example.com/api -X POST -H 'X-HTTP-Method-Override: PUT' \ 
 -H 'Content-Type: application/json' --data '{"username":"xyz"}'
 ```
-###EXPLOITS
+### EXPLOITS
 - None Algorithm
 - Weak Secret
 - Key Confusion
