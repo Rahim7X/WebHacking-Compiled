@@ -104,6 +104,9 @@ Example: if our target is domain Inc, how do we find out there is a vulnerable o
 
 #### Open Ports
 GOAL : First Create A Curated IP List Of Target And Scan
+```bash
+httpx -l subdomains.txt -p 22,25,80,443,3306 -probe
+````
 
 - Shodan 
 org:filter is used to find assets from an orgnisation name
