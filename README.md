@@ -49,3 +49,4 @@ Methodology , Tips , And Resources
 - [Captacha Bypass](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/CAPTCHA-Bypass.md)
 - [AEM Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/AEM-misconfiguration.md)
 - [Hunting S3 Buckets](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/S3-Buckeet-Hunt.md)
+- [CORS Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/CORS-misconfiguration.md)
