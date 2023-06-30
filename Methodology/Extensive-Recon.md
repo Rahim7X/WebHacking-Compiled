@@ -210,6 +210,7 @@ httpx -l liveDomains.txt -srd subsScreens -ss
 ### Filter working urls
 ```bash
 cat target.txt  | waybackurls | httpx -mc 200 -ct | grep application/json | tee json-data
+```
 ### Downloading The Source Code Of Subdomains
 ```bash
 $ cat subd.txt | aquatone
