@@ -181,6 +181,11 @@ Meg will take two parameters, a list of domains to h̶a̶r̶a̶s̶s̶ test, and 
 - Url Enumeration — Subset of Content Discovery: finding existing endpoints.
 - [gauplus Faster than gau much much much](https://github.com/bp0lr/gauplus)
 
+### Split A long list into parts
+```bash
+split -n 4 -d --additional-suffix=".txt" alive.txt part
+```
+
 ### Harnessing The Potential Of Gauplus
 ```bash
 cat allsub.txt | gauplus -subs | grep -i "\.xlsx" allurl.txt | anew xlsx.txt
