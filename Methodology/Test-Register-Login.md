@@ -108,3 +108,21 @@ https://example.com/captcha/SS/   is not available. Please visit - - - - https:/
  https://example.com/session/ --> Same Response
 https://example.com/session/victim.css --> Same Response cached
  ```
+
+#### Portswigger Lab
+##### 1 : Username Enumration Via Different Responses
+- Try a valid username and a invalid string
+- You will see diffrent response
+- Get a valid username and bruteforce password
+
+##### 2 : 2Fa simple bypass
+- Forced Browsing To /my-account
+
+##### 3 : Password Reset Broken Login
+- IDOR to password change of any user
+
+##### 4 : Username Enumration Via Different Keyword
+- If username is invalid : Invalid username of password.
+- If username is valid : Invalid username or password
+
+  
