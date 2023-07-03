@@ -18,3 +18,4 @@ DMARC stands for “Domain-based Message Authentication, Reporting & Conformance
 - in From-email add the company’s email and in To add your own email and in Subject you can add anything (like Hacking You, Bounty Time etc.)
 - Check your inbox and you’ll get the email from that company which was sent by you
 
+- [Mail Sender](https://anonymailer.net/)
