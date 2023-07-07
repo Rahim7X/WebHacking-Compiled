@@ -21,6 +21,11 @@
 - CHange Email Order
 - Provide list of email
 
+### Parameter Tampering
+- Change Email To SMS
+- CHange InsecureLogin : True To False : Etc
+
+  
 ### JSon variable
 - ADD {“token”:null} etc
 ### Password Reset Poisioning
