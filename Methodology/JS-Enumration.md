@@ -4,8 +4,8 @@ Now a days websites use different frameworks and api's which require external cl
 ## How to download and save javascript files
 ```bash
 redjs -u http://example.com -o ./scripts -v
-cat wayback_links.txt | grep ".js" | anew jsurl.txt
-cat gau_url.txt | grep ".js" | anew jsurl.txt
+cat wayback_links.txt | grep -E "\.js$" | anew jsurl.txt
+cat gau_url.txt | grep -E "\.js$" | anew jsurl.txt
 redjs -f jsurl.txt -o ./scripts -v 
 ```
 
