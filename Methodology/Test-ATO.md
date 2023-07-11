@@ -125,3 +125,8 @@ body * to `{"success":true}` or `{}`
 it works when json is being used to transfer and receive data.
 <br>&nbsp;
 
+### Add 0 in ID Parameter
+```
+add 0 in id and update details for any specific user
+
+```
