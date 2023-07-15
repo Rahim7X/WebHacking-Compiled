@@ -38,6 +38,7 @@ Methodology , Tips , And Resources
 ## Class X Issues
 
 - [Same Site Scripting]()
+- [WebSocket Bugs](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Web-Socket.md)
 - [Origin IP](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Origin-Ip.md)
 - [Mail Server Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/MailSevcer-Issue.md)
 - [Integer Overflow](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Interger-Overflow.md)
