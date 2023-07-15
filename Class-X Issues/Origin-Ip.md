@@ -3,6 +3,9 @@
 hostname:test.com
 ```
 
+# security trails
+- old dns records revealing the ip address
+
 # Cynses
 ```bash
 https://censys.io/ipv4?q=example.com
