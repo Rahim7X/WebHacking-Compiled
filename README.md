@@ -51,3 +51,4 @@ Methodology , Tips , And Resources
 - [AEM Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/AEM-misconfiguration.md)
 - [Hunting S3 Buckets](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/S3-Buckeet-Hunt.md)
 - [CORS Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/CORS-misconfiguration.md)
+- [Exploit Leaked Credentials](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Leaked-Key-Exploitation.md)
