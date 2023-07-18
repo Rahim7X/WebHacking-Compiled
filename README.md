@@ -52,3 +52,4 @@ Methodology , Tips , And Resources
 - [Hunting S3 Buckets](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/S3-Buckeet-Hunt.md)
 - [CORS Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/CORS-misconfiguration.md)
 - [Exploit Leaked Credentials](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Leaked-Key-Exploitation.md)
+- [AWS Cognito Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/AWS-Cognito-Hacking.md)
