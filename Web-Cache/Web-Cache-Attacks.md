@@ -66,3 +66,9 @@ if-not-match: payload —> This can overwrite the cache
 ```bash
 example.com?s=1'/><img+src%3dx+onerror%3d"alert(1)"+/>
 ```
+#### it was possible to cause an 400 error 
+by adding an illegal header when it comes to Akamai CDN, ex:
+
+```bash
+\:
+```
