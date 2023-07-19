@@ -77,7 +77,12 @@ in our server
 Now what will happend is we will trigegr xss in subdomain and force it to send data back to us
 ```
 
+### CORS Regex Bypass
+```bash
+Allowed : https://example.com
+Try: https://evil.example.com
 ```
+
 
 ### Resources
 - [Report 1](https://hackerone.com/reports/426165)
