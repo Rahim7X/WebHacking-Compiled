@@ -54,3 +54,4 @@ Methodology , Tips , And Resources
 - [Exploit Leaked Credentials](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Leaked-Key-Exploitation.md)
 - [AWS Cognito Misconfiguration](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/AWS-Cognito-Hacking.md)
 - [Open Redirect](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Open-Redirect.md)
+- [Email Injection](https://github.com/Rahim7X/BugBible/blob/master/Class-X%20Issues/Exploit_Email.md)
