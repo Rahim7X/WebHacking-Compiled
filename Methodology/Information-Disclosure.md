@@ -125,3 +125,9 @@ example.com/phpmyadmin/setup
 example.com/phpmyadmin/setup.php
 example.com/phpMyAdmin/setup/index.php
 ```
+##### CVE-2020–14179 →Unauthenticated Jira Vulnerability
+- Open this endpoint
+```bash
+/secure/QueryComponent!Default.jspa
+```
+
