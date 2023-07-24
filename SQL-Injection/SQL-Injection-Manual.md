@@ -309,9 +309,9 @@ DELETE FROM your_table_name WHERE name = '%user_input%';
 - What is the issue ?
   If we try to fetch entire database then server might crash causing DOS. Also this can be used in other exploits as well.
 - What if we run this in search bar
-  ```bash
+```bash
 %n[^n]y[^j]l[^k]d[^l]h[^z]t[^k]b[^q]t[^q][^n]!%
-  ```
+```
 If the database has a large number of records, the query can take a long time to execute, leading to a slow response time or a complete DoS.
 - Someone renamed file name to this payload and got a response delay.
 
