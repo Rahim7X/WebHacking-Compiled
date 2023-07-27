@@ -49,7 +49,13 @@ http://facebook.com/dialogue/oauth?email=bla@mail.com&user_id=1234
 - becouse if the code is leaked any when it can be used to hack user account
 
 #### Use the same code twise to get access token
-
+#### Misconfigured Google O auth can lead to account takeover 
+- Employee Login Portals
+- If google O -auth page pops up in any subdomain try
+```bash
+https://accounts.google.com/o/oauth2/auth/identifier?access_type=offline&client_id=xxx.googleusercontent.com&hd=gmail.com&redirect_uri=https://target/oauth/callback&response_type=code&scope=mail
+```
+- Here hd parameter is set to gmail.com. If misconfigured attacker can log in with own email
 #### Account Squatting
 - Hacker signed up using victim email but don't have access to verification link
 - Victim Signed Up Using O-auth
