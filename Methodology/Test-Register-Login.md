@@ -109,6 +109,26 @@ https://example.com/captcha/SS/   is not available. Please visit - - - - https:/
 https://example.com/session/victim.css --> Same Response cached
  ```
 
+#### Duplicate Registration
+- Try to generate using an existing username
+- Check varying the email:
+- uppsercase
+- +1@
+- add some some in the email
+- special characters in the email name (%00, %09, %20)
+- Put black characters after the email: test@test.com a
+- victim@gmail.com@attacker.com
+- victim@attacker.com@gmail.com
+
+#### Injection attacks
+- Create user named: AdMIn (uppercase & lowercase letters)
+- Create a user named: admin=
+- MySQL Insert time based checking
+```bash
+name=','');WAITFOR%20DELAY%20'0:0:5'--%20-
+```
+#### [READ](https://book.hacktricks.xyz/pentesting-web/saml-attacks)
+
 #### Portswigger Lab
 ##### 1 : Username Enumration Via Different Responses
 - Try a valid username and a invalid string
