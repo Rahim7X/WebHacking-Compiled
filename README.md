@@ -35,6 +35,7 @@ Methodology , Tips , And Resources
 - [XSS Hunting](https://github.com/Rahim7X/BugBible/blob/master/XSS/XSS-manual.md)
 - [XXE](https://github.com/Rahim7X/BugBible/blob/master/XXE/XXE-manual.md)
 - [Path Traversal](https://github.com/Rahim7X/BugBible/blob/master/Path_Traversal/Path-Traversal.md)
+- [Post Message Hunting](https://github.com/Rahim7X/BugBible/blob/master/Post-Message.md)
 ## Class X Issues
 
 - [Same Site Scripting]()
