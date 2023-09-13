@@ -33,3 +33,9 @@ Send the request to repeater and add the header zTRANSFER-ENCODING: dgsht
 Click on go and check the response, if it is vulnerable then it will show you an error of 501 ‘NOT_IMPLEMENTED’
 
 ```
+## CHeck For Cache Deception
+```bash
+example.com/account.php to example.com/account.php%0Anonexistent.css
+example.com/account.jsp;param to example.com/account.jsp%3Bparamnoexistent.css
+example.com/account.php#frag to example.com/account.php%23nonexistent.css
+```
