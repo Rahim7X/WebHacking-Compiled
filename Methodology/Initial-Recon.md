@@ -1798,6 +1798,13 @@ hostname:example.com
       - "{{BaseURL}}/ping/\"><script>alert(1)</script>"
       - "{{BaseURL}}/ping?jd=a'\"><script>alert(1)</script>"
 ```
+## Server Status Disclosure
+```bash
+      - "{{BaseURL}}/server-status"
+      - "{{BaseURL}}/server-status?full"
+      - "{{BaseURL}}/server-info"
+```
+
 
 ### Find github
 
