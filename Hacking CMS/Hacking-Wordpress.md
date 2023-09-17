@@ -68,3 +68,31 @@ Host: ex.com
 ```
 ##### Exploit scenarios [Check Report](https://hackerone.com/reports/138869)
 
+##### Important Reports To Look AT
+```bash
+Link: https://hackerone.com/reports/436928
+Link: https://hackerone.com/reports/187520
+Link: https://hackerone.com/reports/460911
+Link: https://hackerone.com/reports/509930
+Link: https://hackerone.com/reports/487081
+Link: https://hackerone.com/reports/659419
+Link: https://hackerone.com/reports/222040
+Link: https://hackerone.com/reports/490782
+Link: https://hackerone.com/reports/183568
+Link: https://hackerone.com/reports/204513
+Link: https://hackerone.com/reports/203515
+Link: https://hackerone.com/reports/220903
+Link: https://hackerone.com/reports/270060
+Link: https://hackerone.com/reports/339483
+Link: https://hackerone.com/reports/230234
+Link: https://hackerone.com/reports/250837
+Link: https://hackerone.com/reports/282176
+Link: https://hackerone.com/reports/277502
+Link: https://hackerone.com/reports/230232
+Link: https://hackerone.com/reports/263109
+Link: https://hackerone.com/reports/230435
+Link: https://hackerone.com/reports/495515
+Link: https://hackerone.com/reports/538008
+Link: https://hackerone.com/reports/153093
+Link: https://hackerone.com/reports/837018
+```
