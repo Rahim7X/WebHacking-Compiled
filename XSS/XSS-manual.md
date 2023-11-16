@@ -50,6 +50,7 @@ Solved
 
 ### XSS via swf file upload
 ```bash
+
 git url : https://github.com/evilcos/xss.swf
 location to url: xss.swf?a=location&c=http://www.google.com/
 open url to new window: xss.swf?a=open&c=http://www.google.com/
